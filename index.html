@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struktur silde</title>
+    <style>
+        .container {
+            height: 460px;
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            padding-block: 40px;
+        }
+
+        .slider-container {
+            padding-block: 5px;
+            background-color: aqua;
+            width: 450px;
+            height: 100%;
+            display: flex;
+            gap: 10px;
+            /* overflow: hidden; */
+        }
+
+        .slider-item {
+            min-width: calc((100% / 1) - 0px);
+            background-color: red;
+            position: relative;
+            left: calc(( (100% / 1) + 10px ) * -2);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="slider-container">
+            <div class="slider-item">silder 1</div>
+            <div class="slider-item">silder 2</div>
+            <div class="slider-item">silder 3</div>
+            <div class="slider-item">silder 4</div>
+            <div class="slider-item">silder 5</div>
+        </div>
+    </div>
+    <script src="/js.js" ></script>
+</body>
+
+</html>
