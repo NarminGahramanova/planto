@@ -8,7 +8,8 @@ html {
     font-family: inherit, "Inter", sans-serif;
     scroll-behavior: smooth;
 }
-/* .lalala */
+
+
 
 .box {
     position: absolute;
@@ -74,8 +75,13 @@ header {
     top: 66px;
     left: 20%;
     opacity: 0.75;
-    color: white;
+    /* color: white; */
     list-style: none;
+
+    li a {
+        color: white;
+        text-decoration: none;
+    }
 }
 
 .icon {
@@ -180,9 +186,10 @@ header {
 
 
 .content_2 {
-    width: 60%;
+
+    width: 70%;
     height: 143px;
-    padding-top: 13%;
+    padding-top: 10%;
     padding-left: 57px;
     opacity: 0.75;
     color: rgba(255, 255, 255, 1);
@@ -190,10 +197,21 @@ header {
     font-size: 15px;
 
 
+    .content_2__1 {
+        display: flex;
+        width: 80vw;
+        height: 110vh;
+
+    }
+
+    .content_2 content_2__header {
+        width: 100%;
+    }
+
     h1 {
         font-family: Inter;
-        font-weight: 400;
-        font-size: 95px;
+        font-weight: 40px;
+        font-size: 61px;
         line-height: 100%;
         letter-spacing: 0%;
         vertical-align: middle;
@@ -203,8 +221,8 @@ header {
 
     p {
         font-family: Inter;
-        font-weight: 400;
-        font-size: 22px;
+        font-weight: 40px;
+        font-size: 20px;
         line-height: 100%;
         letter-spacing: 0%;
         vertical-align: middle;
@@ -225,6 +243,10 @@ header {
 
     }
 
+    .btn:hover {
+        box-shadow: 5px 5px 10px rgb(255, 255, 255, 0.5);
+    }
+
     .text {
         display: inline-flex;
         align-items: center;
@@ -235,44 +257,279 @@ header {
 
     }
 
-    .plagon {
-        width: 30px;
-        height: 30px;
-        opacity: 0.75;
-        border-radius: 12px;
-        transform: rotate(-0deg);
-        border: 1px solid white;
+    .profil {
+       width: 309px;
+        height: 209px;
+        background: url(images/images/Rectangle\ 5.png);
+        border-radius: 45px;
+        border-width: 2px;
+        display: flex;
+        flex-wrap: wrap;
 
 
+        .profil_photo {
+            width: 64px;
+            height: 64px;
+            margin-top: 34px;
+            margin-left: 0px;
+
+
+        }
+
+        #name {
+            /* margin-top: 34px; */
+            margin-left: 20px;
+            width: fit-contentx;
+        }
+
+        .stars {
+            margin-top: -51px;
+            margin-left: 100px;
+        }
+
+
+
+        #mini_text {
+            font-size: 16px;
+            margin-left: 30px;
+        }
     }
 
 }
 
-.vidicon {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    padding: 8px 12px;
-    margin-left: 2%;
-    margin-top: -95px;
-    border: 2px solid white;
-    border-radius: 12px;
+.plant-card {
+    width: 60%;
+    margin-left: -70px;
+    text-align: center;
     color: white;
-    text-decoration: none;
-    font-size: 16px;
-
+    display: flex;
+    flex-direction: column;
 
 
 }
 
-.vidicon:hover {
-    box-shadow: 5px 5px 10px rgb(255, 255, 255, 0.5);
+.backg {
+
+    width: 65%;
+    height: 60%;
+    background: url(images/images/Rectangle\ 2.png) no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.minp {
-    border: 3px solid red;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    margin-top: -5px;
+.plant-image-wrapper {
+  display:flex;
+justify-content: center;
+align-items: center;
+    z-index: 1;
 }
+
+.plant-img {
+    width: 300px;
+
+}
+
+
+.buy-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: white;
+    color: black;
+
+}
+
+/*------------------------------ main section1 end----------------- */
+/* --------------------------------media screen-------------------- */
+
+@media screen and (max-width: 425px) {
+
+    .box {
+        height: 250vh;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    .content_2__1 {
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .content_2__header {
+
+        font-size: 20px;
+        width: 90%;
+
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .content_2__btn {
+            padding: 0 10px;
+        
+        }
+    }
+
+    #head_text{
+        width: 345px;
+    }
+    .plant-card {
+        /* width: 100%; */
+        margin-left: 2px;
+        margin-top: 250px;
+    }
+
+    .backg {
+        width: 60vw;
+        height: 100%;
+    }
+
+    .plant-img {
+        width: 100%;
+        height: 35%;
+
+    }
+
+    .plant-info {
+
+        font-size: 15px;
+    }
+
+    .profil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        margin-left: -20%;
+
+    }
+
+    .profil_photo {
+        margin: 20px auto 0;
+    }
+
+    #name,
+    #mini_text {
+        margin: 10px auto;
+    }
+
+    .stars {
+        margin: 0px auto;
+    }
+}
+/*                          
+@media screen and (max-width: 783px) {
+    .content_2__1 {
+     width: 100vw;
+       display: flex;
+       flex-direction: column;
+    }
+
+    .content_2__header  {
+        font-size: 38px;
+        width: 100%;
+       
+      
+    }
+
+    .content_2__header p {
+        font-size: 20px;
+    
+    }
+
+    #head_text{
+        width:  400px;
+        height: 350px;
+    }
+    .content_2__btn {
+        margin-top: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    #text {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .profil {
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .profil_photo {
+        width: 50px;
+        height: 50px;
+    }
+
+    #name {
+     margin-top: 0px;
+        font-size: 16px;
+    }
+
+    .stars {
+        margin: 5px auto;
+    }
+
+    #mini_text {
+        font-size: 14px;
+        margin: 10px auto;
+    }
+
+    .plant-card {
+        width: 50%;
+        margin-left: 30%                                                                                            ;
+        text-align: center;
+    }
+
+    .plant-img {
+        width: 80%;
+      
+    }
+
+    .backg {
+        width: 30vw;
+        height: 80vh;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .plant-info h2 {
+        font-size: 20px;
+    }
+
+    .buy-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+@media screen and (max-width: 925px) {
+    
+
+    .plant-card {
+        width: 50%;
+        margin-left: 20%;
+        text-align: center;
+    }
+} */
